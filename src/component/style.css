@@ -1,0 +1,121 @@
+.voice-recorder-container {
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.error-message {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.record-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.record-button-recording {
+  background-color: #dc2626;
+}
+
+.record-button-recording:hover {
+  background-color: #b91c1c;
+}
+
+.record-button-idle {
+  background-color: #2563eb;
+}
+
+.record-button-idle:hover {
+  background-color: #1d4ed8;
+}
+
+.recording-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #dc2626;
+}
+
+.recording-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #dc2626;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 28rem;
+  margin-top: 0.5rem;
+}
+
+.audio-player {
+  width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.download-button {
+  padding: 0.5rem 1rem;
+  background-color: #16a34a;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #15803d;
+}
+
+.send-button {
+  padding: 0.5rem 1rem;
+  background-color: #9333ea;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #7e22ce;
+}
+
+.unsupported-message {
+  padding: 1rem;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-radius: 0.5rem;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
