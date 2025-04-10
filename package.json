@@ -3,16 +3,12 @@
   "version": "1.0.2",
   "description": "React component to record voice and store as blob data.",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist/ && tsc && npm run copy-css",
-    "copy-css": "cp -r src/**/*.css dist/component/"
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "git": "https://github.com/ananay-nag/react-voice-recorder.git",
   "keywords": [
     "React",
     "Voice",
@@ -32,14 +28,18 @@
   "author": "ANANYA-NAG",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.27.0",
-    "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9",
-    "@babel/preset-react": "^7.26.3",
-    "@types/react": "^19.1.0",
-    "react": "^19.1.0",
-    "tslib": "^2.8.1",
-    "typescript": "^5.8.3"
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "rollup": "^4.18.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3"
   },
   "dependencies": {
     "lucide-react": "^0.487.0"
