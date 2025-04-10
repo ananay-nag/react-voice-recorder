@@ -27,7 +27,7 @@ yarn add @ananay-nag/react-voice-recorder
 The primary component that handles recording audio with compression.
 
 ```jsx
-import { VoiceRecorder } from 'react-voice-recorder-with-compression';
+import { VoiceRecorder } from '@ananay-nag/react-voice-recorder';
 
 function MyRecorder() {
   const handleDataRecorded = (data) => {
@@ -72,7 +72,7 @@ The `onDataRecorded` callback receives an object with:
 Component for playing back recorded audio with file information.
 
 ```jsx
-import { PreviewVoiceNote } from 'react-voice-recorder-with-compression';
+import { PreviewVoiceNote } from '@ananay-nag/react-voice-recorder';
 
 function AudioPlayer({ audioUrl }) {
   return (
@@ -94,7 +94,7 @@ function AudioPlayer({ audioUrl }) {
 A simple component that displays a recording indicator.
 
 ```jsx
-import { RecordingStatus } from 'react-voice-recorder-with-compression';
+import { RecordingStatus } from '@ananay-nag/react-voice-recorder';
 
 function MyRecordingApp({ isCurrentlyRecording }) {
   return (
@@ -116,7 +116,7 @@ function MyRecordingApp({ isCurrentlyRecording }) {
 A utility function to calculate the size of an audio blob in KB.
 
 ```jsx
-import { AudioSize } from 'react-voice-recorder-with-compression';
+import { AudioSize } from '@ananay-nag/react-voice-recorder';
 
 function MyAudioInfo({ audioData }) {
   const sizeInKB = AudioSize(audioData);
@@ -257,4 +257,4 @@ The component includes basic styling, but you can customize it by overriding the
 
 ## License
 
-MIT
+ISC
