@@ -1,17 +1,17 @@
 {
-  "name": "react-voice-recorder",
+  "name": "@ananay-nag/react-voice-recorder",
   "version": "1.0.0",
   "description": "React component to record voice and store as blob data.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "babel src --out-dir dist --copy-files"
+    "build": "babel src --out-dir dist --copy-files"
   },
   "type": "module",
   "files": [
     "dist"
   ],
-  "git":"https://github.com/ananay-nag/react-voice-recorder.git",
+  "git": "https://github.com/ananay-nag/react-voice-recorder.git",
   "keywords": [
     "React",
     "Voice",
@@ -46,5 +46,13 @@
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananay-nag/react-voice-recorder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ananay-nag/react-voice-recorder/issues"
+  },
+  "homepage": "https://github.com/ananay-nag/react-voice-recorder#readme"
 }
