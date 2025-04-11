@@ -1,6 +1,6 @@
 {
   "name": "@ananay-nag/react-voice-recorder",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React component to record voice and store as blob data.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
