@@ -2,6 +2,9 @@
 
 A lightweight, customizable React voice recorder component with automatic audio compression.
 
+## Demo App
+  - https://react-voice-demo-app.vercel.app/
+
 ## Features
 
 - 🎙️ Simple voice recording with automatic compression
